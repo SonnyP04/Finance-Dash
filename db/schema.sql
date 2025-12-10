@@ -1,4 +1,4 @@
-CREATE TABLE user (
+CREATE TABLE users (
     id SERIAL PRIMARY KEY,
     email VARCHAR(255) NOT NULL,
     password VARCHAR(255) NOT NULL,
@@ -10,7 +10,7 @@ CREATE TABLE user (
 
 CREATE TABLE transaction (
     id SERiAL PRIMARY KEY,
-    user_id INTEGER NOT NULL REFERENCES user(id),
+    user_id INTEGER NOT NULL REFERENCES users(id),
     created_at TIMESTAMP DEFAULT NOW(),
     amount DECIMAL(10, 2) NOT NULL,
     description TEXT,
@@ -19,10 +19,10 @@ CREATE TABLE transaction (
 
 CREATE TABLE budget (
     id SERIAL PRIMARY KEY,
-    user_id INTEGER NOT NULL REFERENCES user(id),
+    user_id INTEGER NOT NULL REFERENCES users(id),
     category VARCHAR(255),
     month DATE NOT NULL UNIQUE,
-    limit INTEGER NOT NULL,
+    amount_limit INTEGER NOT NULL,
     created_at TIMESTAMP DEFAULT NOW(),
     updated_at TIMESTAMP DEFAULT NOW(),
 

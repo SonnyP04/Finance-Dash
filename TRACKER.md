@@ -6,18 +6,18 @@
 
 **Tasks**:
 - [x] Create finance_app database
-- [ ] Create users table
-- [ ] Create transactions table
-- [ ] Create budgets table
-- [ ] Add constraints and relationships
+- [x] Create users table
+- [x] Create transactions table
+- [x] Create budgets table
+- [x] Add constraints and relationships
 - [ ] Insert test data
 - [ ] Write and test queries
 
 **Completion Criteria**:
-- [ ] All tables created
-- [ ] Can INSERT and SELECT data
-- [ ] Relationships work correctly
-- [ ] schema.sql file created
+- [x] All tables created
+- [x] Can INSERT and SELECT data
+- [x] Relationships work correctly
+- [x] schema.sql file created
 
 ---
 
@@ -26,7 +26,7 @@
 **Goal**: Create FastAPI application and connect to database
 
 **Tasks**:
-- [ ] Set up FastAPI project structure
+- [x] Set up FastAPI project structure
 - [ ] Create SQLAlchemy models
 - [ ] Create database connection
 - [ ] Test database connectivity
