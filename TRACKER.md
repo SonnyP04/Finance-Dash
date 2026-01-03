@@ -27,9 +27,9 @@
 
 **Tasks**:
 - [x] Set up FastAPI project structure
-- [ ] Create SQLAlchemy models
-- [ ] Create database connection
-- [ ] Test database connectivity
+- [x] Create SQLAlchemy models
+- [x] Create database connection
+- [x] Test database connectivity
 - [ ] Create basic endpoints
 
 **Completion Criteria**:
