@@ -27,6 +27,13 @@ def read_root():
 def health_check():
     return {"status": "healthy"}
 
+with app.app_context():
+    try:
+        db.session.execute(text('SELECT 1'))
+        print('\n\n----------- Connection successful !')
+    except Exception as e:
+        print('\n\n----------- Connection failed ! ERROR : ', e)
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
